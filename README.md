@@ -1,6 +1,6 @@
 # pyJection
 
-**Disclaimer: I do not support or support, encourage or give consent to any unethical use of this code.**
+**Disclaimer: I do not support, encourage or give consent to any unethical use of this code.**
 
 This is a pyDivert-based class I wrote for easy TCP packet injection, mainly between a client-server connection. For-example a connection between an application running on our machine, to an external server. This works on a MITM (Man-In-The-Middle) arrangement and injects packets into a TCP stream, in either direction (from Client -> Server or Server -> Client). 
 
