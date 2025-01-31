@@ -2,6 +2,8 @@
 
 **Disclaimer: I do not support, encourage or give consent to any unethical use of this code.**
 
+**Requirements:** pyDivert
+
 This is a pyDivert-based class I wrote for easy TCP packet injection, mainly between a client-server connection. For-example a connection between an application running on our machine, to an external server. This works on a MITM (Man-In-The-Middle) arrangement and injects packets into a TCP stream, in either direction (from Client -> Server or Server -> Client). 
 
 Currently, this class duplicates the previous packet and substitutes our payloads in it. This is the only reason it needs to wait for a relevant packet to inject. To clarify, a relevant packet would the a packet which has the direction in which we want to inject a packet.
