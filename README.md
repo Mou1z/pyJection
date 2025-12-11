@@ -44,7 +44,7 @@ def runFunction(packet, packetStream):
 
 manager.runFunction = runFunction  
 ```
-Every packet passes through this function. The packet can be modified, or additional packets can be injected before/after the current packet. Note that the length of the current packet must not be modified as it's not supported by the class yet.
+Every packet passes through this function. The packet can be modified, or additional packets can be injected after the current packet. Note that the length of the current packet must not be modified as it is currently not supported by the class. 
 
 We call either `manager.injectAfter` or `packetStream.send`. This is because `injectAfter` has `packetStream.send` called inside it so using `send` twice would send a duplicate packet. In short, we don't use `packetStream.send()` when we have injected a packet, otherwise we have to. I know this can be improved, I continued to the C++ implementation of it so I'm currently not working on making this better.
 
