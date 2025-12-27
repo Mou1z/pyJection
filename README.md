@@ -6,7 +6,7 @@
 
 This is a pyDivert-based class I wrote for easy TCP packet injection, between a client-server connection. For-example a connection between an application running on our machine and an external server:
 
-<img width="1920" height="1080" alt="Your PC" src="https://github.com/user-attachments/assets/3bcd20a5-4209-44e4-85c6-00b9bcbd6331" />
+<img width="1920" height="1080" alt="Your PC" src="https://github.com/user-attachments/assets/0ccef5e3-1a8a-4098-9146-4997a271c0c0" />
 
 This works using a MITM (Man-In-The-Middle) arrangement and injects packets into a TCP stream, in either direction (from Client -> Server or Server -> Client). 
 
